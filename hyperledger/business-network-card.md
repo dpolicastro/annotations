@@ -34,6 +34,7 @@ Create a /dist folder inside your project, then cd /dist
 **1. Create archive file (.bna)**  
 ```sh
 $ composer archive create -t dir -n ../
+
 -n,   Path to package.json  
 -t,   Resource type  
 ```
@@ -41,17 +42,28 @@ $ composer archive create -t dir -n ../
 **2. Install network application to fabric**
 ```sh
 $ composer network install -a test-bna@0.0.1.bna -c PeerAdmin@hlfv1
+
+-a,   Business Network Archive
+-c,   PeerAdmin card
 ```
 
 **3. Start BNA on fabric**  
-This command deploys a admin network card
+This command deploys a network admin card
 ```sh
 $ composer network start -c PeerAdmin@hlfv1 -n test-bna -V 0.0.1 -A admin -S adminpw
+
+-c,   PeerAdmin card
+-n,   Business network name
+-V,   Business network version
+-A,   Admin username
+-S,   Admin password
 ```
 
 **4. Import network admin card**
 ```sh
 $ composer card import -f admin@test-bna.card
+
+-f,   Network Admin Card
 ```
 
 **5. Check if the card was imported**
