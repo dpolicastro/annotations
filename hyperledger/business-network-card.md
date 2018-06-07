@@ -32,11 +32,11 @@
 
 Create a /dist folder inside your project, then cd /dist  
 **1. Create archive file (.bna)**  
--n,  Path to package.json  
--t,  Resource type  
 ```sh
 composer archive create -t dir -n ../
 ```
+-n,  Path to package.json  
+-t,  Resource type  
 
 **2. Install network application to fabric**
 ```sh
