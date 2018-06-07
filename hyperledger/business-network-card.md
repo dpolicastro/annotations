@@ -30,29 +30,31 @@
 
 ### Creating and importing a card:
 
-Inside project/dist folder, where -n is the path to the package.json  
-**Create archive file (.bna)**  
+Create a /dist folder inside your project, then cd /dist  
+**1. Create archive file (.bna)**  
+-n,  Path to package.json  
+-t,  Resource type  
 ```sh
 composer archive create -t dir -n ../
 ```
 
-**Install network application to fabric**
+**2. Install network application to fabric**
 ```sh
 $ composer network install -a test-bna@0.0.1.bna -c PeerAdmin@hlfv1
 ```
 
-**Start BNA on fabric**  
+**3. Start BNA on fabric**  
 This command deploys a admin network card
 ```sh
 $ composer network start -c PeerAdmin@hlfv1 -n test-bna -V 0.0.1 -A admin -S adminpw
 ```
 
-**Import network admin card**
+**4. Import network admin card**
 ```sh
 $ composer card import -f admin@test-bna.card
 ```
 
-**Check if the card was imported**
+**5. Check if the card was imported**
 ```sh
 $ composer card list
 ```
