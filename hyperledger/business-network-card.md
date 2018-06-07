@@ -4,13 +4,13 @@
 ```
 ~/.composer  
      ‖----- cards [1]  
-     ‖----- PeerAdmin@node-name  
-     ‖----- NetworkAdmin@BNA-name  
-             ‖----- metadata.json [2]  
-             ‖----- connection.json [3]  
-             ‖----- credentials  
-                   ‖----- certificate  
-                   ‖----- privateKey  
+          ‖----- PeerAdmin@node-name  
+          ‖----- NetworkAdmin@BNA-name  
+                  ‖----- metadata.json [2]  
+                  ‖----- connection.json [3]  
+                  ‖----- credentials  
+                        ‖----- certificate  
+                        ‖----- privateKey  
      ‖----- client-data (key-files and certificates)  
 ```
 [1] Users may have different cards on their machine to connect to different business networks.  
