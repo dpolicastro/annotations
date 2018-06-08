@@ -21,12 +21,12 @@
 
 
 ### Roles
-**Peer Administrator**  
--Node Level, created as part of the environment setup
+**1. Peer Administrator**  
+- Node Level, created as part of the environment setup
 
-**Network Administrator**  
--Aplication level, created by Peer Administrator  
--Can create participants, or authorize to create other participants  
+**2. Network Administrator**  
+- Aplication level, created by Peer Administrator  
+- Can create participants, or authorize to create other participants  
 
 ### Creating and importing a card
 
