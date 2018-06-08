@@ -10,6 +10,7 @@ $ Composer-rest-server
 **Pros**
 - The rest server can be used to explore the data, CRUD operations and submit transactions  
 - Applications can interact with fabric consuming the REST API  
+
 **Cons** 
 - A single network card can deploy the rest-server and execute ALL the transactions
 ---
