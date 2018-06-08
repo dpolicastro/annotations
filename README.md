@@ -8,3 +8,8 @@ This repository contains some markdown files with annotations for things that I'
 ## Hyperledger-composer
 
 - [Business Network Cards](https://github.com/dpolicastro/annotations/blob/master/hyperledger/business-network-card.md)
+
+
+### References
+
+- [Markdown Documentation By WordPress](https://en.support.wordpress.com/markdown-quick-reference/)
