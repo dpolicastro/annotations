@@ -7,7 +7,7 @@ This repository contains some markdown files with annotations for things that I'
 
 ## Hyperledger-composer
 
-- [Business Network Cards](https://github.com/dpolicastro/annotations/blob/master/hyperledger/business-network-card.md)
+- [Business Network Applications](https://github.com/dpolicastro/annotations/blob/master/hyperledger/business-network-applications.md)
 
 
 ### References
