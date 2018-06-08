@@ -19,7 +19,7 @@
 - Information about how to reach the CA (https://)  
 - Information about how to reach the peers and orderers (grpcs://)  
 
-
+---
 ### Roles
 **1. Peer Administrator**  
 - Node Level, created as part of the environment setup
@@ -27,7 +27,7 @@
 **2. Network Administrator**  
 - Aplication level, created by Peer Administrator  
 - Can create participants, or authorize to create other participants  
-
+---
 ### Creating and importing a card
 
 Create a /dist folder inside your project, then cd /dist  
@@ -70,3 +70,4 @@ $ composer card import -f admin@test-bna.card
 ```sh
 $ composer card list
 ```
+---
