@@ -28,7 +28,9 @@
 - Aplication level, created by Peer Administrator  
 - Can create participants, or authorize to create other participants  
 ---
-### Creating and importing a card
+### Creating a BNA and importing a network admin card
+
+Considering you created a project using the yo generator cli,, e.g, `yo hyperledger-composer` follow the next steps:  
 
 Create a /dist folder inside your project, then cd /dist  
 **1. Create archive file (.bna)**  
@@ -70,4 +72,46 @@ $ composer card import -f admin@test-bna.card
 ```sh
 $ composer card list
 ```
+
+**6. Testing the connection to the network**
+```sh
+$ composer network ping -c admin@test-bna
+
+-c,   Imported network admin card
+```
 ---
+### Updating your BNA
+
+**1. Create a new archive file (.bna)**  
+After incrementing the version at package.json
+```sh
+$ composer archive create -t dir -n ../
+
+-n,   Path to package.json  
+-t,   Resource type  
+```
+
+**2. Install the new version of the BNA to fabric**  
+```sh
+$ composer network install -a test-bna@0.0.2.bna -c PeerAdmin@hlfv1
+
+-a,   Business Network Archive
+-c,   PeerAdmin card
+```
+
+**3. Upgrade the BNA**  
+```sh
+$ composer network upgrade -c PeerAdmin@hlfv1 -n test-bna -V 0.0.2
+
+-c,   PeerAdmin card
+-n,   Business network name
+-V,   Business network version
+```
+
+**4. Test your network**
+```sh
+$ composer network ping -c admin@test-bna
+
+-c,   Network Admin Card
+```
+
