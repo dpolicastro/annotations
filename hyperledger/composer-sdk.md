@@ -11,13 +11,13 @@ Hides protocols level details, makes easy for developers to interact with Fabric
   - Submit transactions
   - Event listener
 
-**Admin Module** - Depends on card
+**Admin Module** - Depends on card  
 Supports automation of administrative tasks, for example:  
   - Deploy/Update BNA
   - Manage Cards
   - Ping the network to check its availability
   
-**Commom Module** 
+**Commom Module**  
 Exposos commom interfaces.  
 
 **Runtime Module**  
