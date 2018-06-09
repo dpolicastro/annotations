@@ -12,3 +12,6 @@ Supports inheritance
 
 - `concept`  
 Represents a generic class, group fields  
+
+- `import`  
+Used to import resources from another namespace
