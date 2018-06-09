@@ -32,11 +32,13 @@
 
 Considering you created a project using the yo generator cli,, e.g, `yo hyperledger-composer` follow the next steps:  
 
-Create a /dist folder inside your project, then cd /dist  
+Create a /dist folder inside your project  
 **1. Create archive file (.bna)**  
 ```sh
-$ composer archive create -t dir -n ../
+$ mkdir dist  
+$ composer archive create -a dist/test-bna.bna -t dir -n .  
 
+-a,   .bna file name
 -n,   Path to package.json  
 -t,   Resource type  
 ```
