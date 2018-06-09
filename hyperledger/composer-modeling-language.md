@@ -14,4 +14,14 @@ Supports inheritance
 Represents a generic class, group fields  
 
 - `import`  
-Used to import resources from another namespace
+Used to import resources from another namespace  
+
+### Relationship  
+
+- `-->`  
+This syntax is used to represent a relationship between resources in the .cto file  
+
+To assign value to a resource, you need to need to pass the fully qualified resource name and identity  
+```js
+"car": "org.example.cars.Car#CAR001"
+```  
