@@ -36,7 +36,7 @@ Create a /dist folder inside your project
 **1. Create archive file (.bna)**  
 ```sh
 $ mkdir dist  
-$ composer archive create -a dist/test-bna.bna -t dir -n .  
+$ composer archive create -a dist/test-bna@0.0.1.bna -t dir -n .  
 
 -a,   .bna file name
 -n,   Path to package.json  
