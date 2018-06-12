@@ -1,5 +1,10 @@
 # Business Network Applications 
 
+- [Roles](#roles)  
+- [Creating BNA](#createbna)  
+- [Updating BNA](#updatebna)  
+- [Managing Identities](#manageId)  
+
 ### Files Path
 ```
 ~/.composer  
@@ -20,7 +25,7 @@
 - Information about how to reach the peers and orderers (grpcs://)  
 
 ---
-### Roles
+### <a name="roles"></a>Roles
 **1. Peer Administrator**  
 - Node Level, created as part of the environment setup
 
@@ -28,7 +33,7 @@
 - Aplication level, created by Peer Administrator  
 - Can create participants, or authorize to create other participants  
 ---
-### Creating a BNA and importing a network admin card
+### <a name="createbna"></a>Creating a BNA and importing a network admin card
 
 Considering you created a project using the yo generator cli,, e.g, `yo hyperledger-composer` follow the next steps:  
 
@@ -82,7 +87,7 @@ $ composer network ping -c admin@test-bna
 -c,   Imported network admin card
 ```
 ---
-### Updating your BNA
+### <a name="updatebna"></a>Updating your BNA
 
 **1. Create a new archive file (.bna)**  
 After incrementing the version at package.json
@@ -116,4 +121,5 @@ $ composer network ping -c admin@test-bna
 
 -c,   Network Admin Card
 ```
-
+---
+### <a name="manageId"></a>Managing Identities in the Network
