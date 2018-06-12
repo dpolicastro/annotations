@@ -1,5 +1,6 @@
 # Business Network Applications 
 
+### Index  
 - [Roles](#roles)  
 - [Creating BNA](#createbna)  
 - [Updating BNA](#updatebna)  
@@ -123,3 +124,16 @@ $ composer network ping -c admin@test-bna
 ```
 ---
 ### <a name="manageId"></a>Managing Identities in the Network
+
+- `composer participand add`  
+Adds a participant to the BNA  
+
+- `composer identity`  
+Can be used for multiple actions, must provide a valid card to execute the commands.  
+**Subcommands**
+     - `bind` Binds existing Identity(cert) to Participant  
+     - `issue` Issue new Identity(card) to Participant  
+     - `list` List participants  
+     - `request` Request an Identity's certificate and key  
+     - `revoke` Revoke an Identity issued to a Participant    
+     
